@@ -1,0 +1,20 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "APM project for test-project",
+  "author": {
+    "name": "KazukiYamabe"
+  },
+  "agents": [
+    "agents/"
+  ],
+  "skills": [
+    "skills/"
+  ],
+  "commands": [
+    "commands/"
+  ],
+  "instructions": [
+    "instructions/"
+  ]
+}
