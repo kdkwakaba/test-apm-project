@@ -1,0 +1,5 @@
+{
+  "name": "test-apm-project",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash .devcontainer/setup-apm.sh"
+}
