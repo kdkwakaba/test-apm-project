@@ -1,7 +1,7 @@
 name: "Contoso Engineering Policy"
 version: "1.0.0"
 extends: org
-enforcement: warn         # warn | block | off
+enforcement: block         # warn | block | off
 
 dependencies:
   deny:
