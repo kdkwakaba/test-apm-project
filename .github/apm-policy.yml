@@ -4,8 +4,6 @@ extends: org
 enforcement: warn         # warn | block | off
 
 dependencies:
-  allow:
-    - "contoso/**"
   deny:
     - "microsoft/**"
 
