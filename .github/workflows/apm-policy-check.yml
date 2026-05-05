@@ -9,6 +9,7 @@ on:
     paths:
       - apm.yml
       - apm.lock.yaml
+  workflow_dispatch:
 
 jobs:
   policy-check:
