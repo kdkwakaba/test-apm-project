@@ -5,7 +5,7 @@ enforcement: block         # warn | block | off
 
 dependencies:
   deny:
-    - "microsoft/**"
+    - "*/azure-skills/**"
 
 mcp:
   transport:

@@ -7,3 +7,5 @@ dependencies:
   mcp: []
 includes: auto
 scripts: {}
+policy:
+  fetch_failure_default: block
