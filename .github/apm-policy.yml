@@ -1,5 +1,6 @@
 name: "Contoso Engineering Policy"
 version: "1.0.0"
+extends: kdkwakaba/test-apm-project
 enforcement: block         # warn | block | off
 
 dependencies:
