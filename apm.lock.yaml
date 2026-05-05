@@ -1,0 +1,13 @@
+lockfile_version: '1'
+generated_at: '2026-05-05T06:08:18.903275+00:00'
+apm_version: 0.12.1
+dependencies:
+- repo_url: microsoft/azure-skills
+  host: github.com
+  resolved_commit: 23dd1ec58a4e7725b13b568e16bdc54f91779e9f
+  virtual_path: skills/azure-cost
+  is_virtual: true
+  package_type: claude_skill
+  deployed_files:
+  - .agents/skills/azure-cost
+  content_hash: sha256:bfee7b75519431c22a79ed905a1d911e59c933f0d10c71206437adb7a1157991

@@ -1,0 +1,34 @@
+name: APM Policy Check
+
+on:
+  push:
+    paths:
+      - apm.yml
+      - apm.lock.yaml
+  pull_request:
+    paths:
+      - apm.yml
+      - apm.lock.yaml
+
+jobs:
+  policy-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Microsoft APM CLI
+        run: curl -sSL https://aka.ms/apm-unix | sh
+
+      - name: Verify APM policy compliance
+        shell: bash
+        run: |
+          set -o pipefail
+          apm audit --ci --policy org 2>&1 | tee apm-policy-check-result.txt
+
+      - name: Upload APM policy check result
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: apm-policy-check-result
+          path: apm-policy-check-result.txt
