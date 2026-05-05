@@ -24,7 +24,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          apm audit --ci --policy org 2>&1 | tee apm-policy-check-result.txt
+          apm audit --ci --policy .github/apm-policy.yml 2>&1 | tee apm-policy-check-result.txt
 
       - name: Upload APM policy check result
         if: always()
