@@ -1,0 +1,13 @@
+name: "Contoso Engineering Policy"
+version: "1.0.0"
+enforcement: block         # warn | block | off
+
+dependencies:
+  allow:
+    - "contoso/**"
+  deny:
+    - "microsoft/**"
+
+mcp:
+  transport:
+    allow: [http, stdio]   # block sse and streamable-http

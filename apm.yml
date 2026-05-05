@@ -3,10 +3,7 @@ version: 1.0.0
 description: APM project for test-project
 author: KazukiYamabe
 dependencies:
-  apm:
-  - microsoft/apm-sample-package
-  mcp:
-  - name: io.github.github/github-mcp-server
-    transport: http
+  apm: []
+  mcp: []
 includes: auto
 scripts: {}
